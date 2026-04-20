@@ -7,13 +7,19 @@
 <title>Kế Hoạch Tuần 36 – Bảo Lâm · 20–26/4/2026</title>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@700;800&display=swap" rel="stylesheet">
 <style>
+/* ── FONT FALLBACK: nếu Google Fonts không load, dùng system fonts ── */
+@font-face {
+  font-family: 'DisplayFallback';
+  src: local('Trebuchet MS'), local('Arial Rounded MT Bold'), local('Arial Black'), local('Impact');
+  font-weight: 700 900;
+}
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-body{font-family:'Nunito',sans-serif;background:#D8D4CE;padding:20px}
+body{font-family:'Nunito','Segoe UI',Tahoma,Arial,sans-serif;background:#D8D4CE;padding:20px}
 
 @media screen{
 .nav{max-width:960px;margin:0 auto 18px;background:#111;border-radius:12px;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
-.nav h2{font-family:‘Baloo 2’,cursive;font-size:1.1rem;color:#fff;margin:0}
+.nav h2{font-family:‘Baloo 2’,‘Arial Black’,‘Arial Rounded MT Bold’,Arial,sans-serif;font-size:1.1rem;color:#fff;margin:0}
 .nav h2 b{color:#F5B800}
 .nav-hint{font-size:.7rem;color:rgba(255,255,255,.5)}
 .pbtn{background:#F5B800;color:#111;border:none;border-radius:7px;padding:8px 18px;font-family:‘Nunito’,sans-serif;font-size:.85rem;font-weight:900;cursor:pointer}
@@ -36,7 +42,7 @@ body{margin:0;padding:0;background:#fff}
 .ph::before{content:’’;position:absolute;top:0;right:0;width:100px;height:100%;background:rgba(255,255,255,.06);transform:skewX(-8deg) translateX(15px)}
 .ph-in{padding:15px 20px 12px;position:relative;z-index:1}
 .ph-top{display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
-.ph-title{font-family:‘Baloo 2’,cursive;font-size:1.9rem;font-weight:800;line-height:1.05;color:#fff}
+.ph-title{font-family:‘Baloo 2’,‘DisplayFallback’,‘Arial Black’,‘Arial Rounded MT Bold’,Tahoma,Arial,sans-serif;font-size:1.9rem;font-weight:800;line-height:1.05;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.3)}
 .ph-title em{color:var(–acc,#F5B800);font-style:normal}
 .ph-date{font-size:.7rem;font-weight:700;color:rgba(255,255,255,.6);margin-top:3px;letter-spacing:.02em}
 .ph-kick{background:var(–acc,#F5B800);color:#111;font-size:.72rem;font-weight:900;padding:4px 12px;border-radius:4px;white-space:nowrap;flex-shrink:0;margin-top:3px;letter-spacing:.04em;text-transform:uppercase}
@@ -79,7 +85,7 @@ body{margin:0;padding:0;background:#fff}
 .sleep{display:flex;align-items:center;gap:8px;background:#111;border-radius:6px;padding:8px 12px;border-left:5px solid var(–acc,#F5B800)}
 .sleep .si{font-size:1.3rem}
 .sleep .st{color:#fff;flex:1}
-.sleep .st b{font-family:‘Baloo 2’,cursive;font-size:.88rem;display:block;line-height:1.2}
+.sleep .st b{font-family:‘Baloo 2’,‘Arial Black’,‘Arial Rounded MT Bold’,Arial,sans-serif;font-size:.88rem;display:block;line-height:1.2}
 .sleep .st span{font-size:.62rem;color:rgba(255,255,255,.5)}
 .sp{background:var(–acc,#F5B800);color:#111;border-radius:4px;padding:3px 9px;font-size:.69rem;font-weight:900;white-space:nowrap}
 
@@ -126,13 +132,13 @@ body{margin:0;padding:0;background:#fff}
 .evw{height:24px;background:#F8F6F2;border-radius:4px;border:1px solid #E0DDD8}
 .ev-mood{display:inline-flex;gap:5px;font-size:.9rem;margin-left:5px}
 .ev-tot{background:var(–hbg,#111);border-radius:5px;padding:7px 11px;display:flex;align-items:center;justify-content:space-between;color:#fff}
-.ev-tot .sn{font-family:‘Baloo 2’,cursive;font-size:1.55rem;line-height:1;color:var(–acc,#F5B800)}
+.ev-tot .sn{font-family:‘Baloo 2’,‘Arial Black’,‘Arial Rounded MT Bold’,Arial,sans-serif;font-size:1.55rem;line-height:1;color:var(–acc,#F5B800)}
 .ev-tot .sl{font-size:.63rem;color:rgba(255,255,255,.6)}
 .ev-tot .pct{font-size:.63rem;font-weight:700;color:rgba(255,255,255,.75)}
 
 /* ── FOOTER ── */
 .pf{background:var(–hbg,#111);padding:6px 20px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
-.pf-n{font-family:‘Baloo 2’,cursive;font-size:.88rem;color:rgba(255,255,255,.8);font-weight:700}
+.pf-n{font-family:‘Baloo 2’,‘Arial Black’,‘Arial Rounded MT Bold’,Arial,sans-serif;font-size:.88rem;color:rgba(255,255,255,.8);font-weight:700}
 .pf-r{display:flex;gap:7px}
 .pf-c{background:var(–acc,#F5B800);color:#111;border-radius:4px;padding:2px 9px;font-size:.63rem;font-weight:900}
 
@@ -166,14 +172,14 @@ body{margin:0;padding:0;background:#fff}
 /* ── SPECIAL ── */
 .mega{background:var(–hbg,#111);border-radius:6px;padding:12px 14px;text-align:center;border:3px solid var(–acc,#F5B800)}
 .mega .mi{font-size:1.8rem;display:block;margin-bottom:3px}
-.mega .mt{font-family:‘Baloo 2’,cursive;font-size:1.1rem;color:#fff;font-weight:800;line-height:1.2}
+.mega .mt{font-family:‘Baloo 2’,‘Arial Black’,‘Arial Rounded MT Bold’,Arial,sans-serif;font-size:1.1rem;color:#fff;font-weight:800;line-height:1.2}
 .mega .ms{font-size:.68rem;color:rgba(255,255,255,.65);margin-top:4px}
 .info-card{background:#fff;border-radius:6px;border-left:5px solid var(–ic,#0055BB);padding:8px 11px;box-shadow:0 1px 4px rgba(0,0,0,.06)}
 .info-card .ic-title{font-size:.72rem;font-weight:900;color:var(–ic,#0055BB);margin-bottom:4px;display:flex;align-items:center;gap:5px}
 .info-card .ic-body{font-size:.7rem;color:#333;line-height:1.45}
 .week-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:5px}
 .stat{background:#fff;border-radius:5px;padding:7px 5px;text-align:center;border:1.5px solid #E8E4DE}
-.stat .sv{font-family:‘Baloo 2’,cursive;font-size:1.2rem;line-height:1;color:var(–hbg,#111)}
+.stat .sv{font-family:‘Baloo 2’,‘Arial Black’,‘Arial Rounded MT Bold’,Arial,sans-serif;font-size:1.2rem;line-height:1;color:var(–hbg,#111)}
 .stat .sl{font-size:.58rem;color:#888;font-weight:700;margin-top:1px}
 </style>
 
@@ -233,19 +239,19 @@ body{margin:0;padding:0;background:#fff}
 <div class="slbl">⚡ Deadline Quan Trọng</div>
 <div style="display:flex;flex-direction:column;gap:4px">
   <div style="display:flex;align-items:stretch;border-radius:5px;overflow:hidden;border:2px solid #CC0033">
-    <div style="background:#CC0033;color:#fff;font-family:'Baloo 2',cursive;font-size:.7rem;font-weight:800;padding:5px 8px;min-width:58px;text-align:center;flex-shrink:0;line-height:1.3">T2<br>20/4<br>🔴</div>
+    <div style="background:#CC0033;color:#fff;font-family:'Baloo 2','Arial Black','Arial Rounded MT Bold',Arial,sans-serif;font-size:.7rem;font-weight:800;padding:5px 8px;min-width:58px;text-align:center;flex-shrink:0;line-height:1.3">T2<br>20/4<br>🔴</div>
     <div style="padding:5px 10px;flex:1;background:#fff"><div style="font-size:.74rem;font-weight:800;color:#CC0033">🔬 Nộp Phiếu HDOT CKII – ĐÃ QUA HẠN! Nộp ngay hôm nay!</div><div style="font-size:.63rem;color:#666">Phiếu ôn tập C1–C8 + SBT tương ứng</div></div>
   </div>
   <div style="display:flex;align-items:stretch;border-radius:5px;overflow:hidden;border:2px solid #0055BB">
-    <div style="background:#0055BB;color:#fff;font-family:'Baloo 2',cursive;font-size:.7rem;font-weight:800;padding:5px 8px;min-width:58px;text-align:center;flex-shrink:0;line-height:1.3">T2–T6<br>20–24/4</div>
+    <div style="background:#0055BB;color:#fff;font-family:'Baloo 2','Arial Black','Arial Rounded MT Bold',Arial,sans-serif;font-size:.7rem;font-weight:800;padding:5px 8px;min-width:58px;text-align:center;flex-shrink:0;line-height:1.3">T2–T6<br>20–24/4</div>
     <div style="padding:5px 10px;flex:1;background:#fff"><div style="font-size:.74rem;font-weight:800;color:#0055BB">💻 Quiz LMS trước tiết: Bài 8.6, 8.7, 9.1</div><div style="font-size:.63rem;color:#666">Làm trước 8h sáng hôm có tiết KHTN</div></div>
   </div>
   <div style="display:flex;align-items:stretch;border-radius:5px;overflow:hidden;border:2px solid #884400">
-    <div style="background:#884400;color:#fff;font-family:'Baloo 2',cursive;font-size:.7rem;font-weight:800;padding:5px 8px;min-width:58px;text-align:center;flex-shrink:0;line-height:1.3">05/5<br>Toán</div>
+    <div style="background:#884400;color:#fff;font-family:'Baloo 2','Arial Black','Arial Rounded MT Bold',Arial,sans-serif;font-size:.7rem;font-weight:800;padding:5px 8px;min-width:58px;text-align:center;flex-shrink:0;line-height:1.3">05/5<br>Toán</div>
     <div style="padding:5px 10px;flex:1;background:#fff"><div style="font-size:.74rem;font-weight:800;color:#884400">📐 Thi Toán HK2 – Còn 15 ngày!</div><div style="font-size:.63rem;color:#666">Ôn mỗi ngày 20' bắt đầu từ tuần này</div></div>
   </div>
   <div style="display:flex;align-items:stretch;border-radius:5px;overflow:hidden;border:2px solid #007744">
-    <div style="background:#007744;color:#fff;font-family:'Baloo 2',cursive;font-size:.7rem;font-weight:800;padding:5px 8px;min-width:58px;text-align:center;flex-shrink:0;line-height:1.3">06/5<br>KHTN</div>
+    <div style="background:#007744;color:#fff;font-family:'Baloo 2','Arial Black','Arial Rounded MT Bold',Arial,sans-serif;font-size:.7rem;font-weight:800;padding:5px 8px;min-width:58px;text-align:center;flex-shrink:0;line-height:1.3">06/5<br>KHTN</div>
     <div style="padding:5px 10px;flex:1;background:#fff"><div style="font-size:.74rem;font-weight:800;color:#007744">🔬 Thi KHTN CKII – Còn 16 ngày! C1–C8</div><div style="font-size:.63rem;color:#666">Thi 90 phút · Trắc nghiệm + Tự luận</div></div>
   </div>
 </div>
@@ -681,10 +687,10 @@ body{margin:0;padding:0;background:#fff}
 ```
 <!-- FINAL SCORE -->
 <div style="background:#003322;border-radius:6px;padding:11px 13px;border:2px solid #00FF99">
-  <div style="font-family:'Baloo 2',cursive;font-size:.95rem;color:#00FF99;margin-bottom:8px">🎯 Tổng Kết Tuần 36</div>
+  <div style="font-family:'Baloo 2','Arial Black','Arial Rounded MT Bold',Arial,sans-serif;font-size:.95rem;color:#00FF99;margin-bottom:8px">🎯 Tổng Kết Tuần 36</div>
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:7px">
-    <div style="background:rgba(255,255,255,.08);border-radius:5px;padding:7px;text-align:center"><div style="font-size:.6rem;color:rgba(255,255,255,.6)">Điểm TB tuần</div><div style="font-family:'Baloo 2',cursive;font-size:1.4rem;color:#F5B800;line-height:1">___ ⭐</div></div>
-    <div style="background:rgba(255,255,255,.08);border-radius:5px;padding:7px;text-align:center"><div style="font-size:.6rem;color:rgba(255,255,255,.6)">Hoàn thành</div><div style="font-family:'Baloo 2',cursive;font-size:1.4rem;color:#F5B800;line-height:1">____%</div></div>
+    <div style="background:rgba(255,255,255,.08);border-radius:5px;padding:7px;text-align:center"><div style="font-size:.6rem;color:rgba(255,255,255,.6)">Điểm TB tuần</div><div style="font-family:'Baloo 2','Arial Black','Arial Rounded MT Bold',Arial,sans-serif;font-size:1.4rem;color:#F5B800;line-height:1">___ ⭐</div></div>
+    <div style="background:rgba(255,255,255,.08);border-radius:5px;padding:7px;text-align:center"><div style="font-size:.6rem;color:rgba(255,255,255,.6)">Hoàn thành</div><div style="font-family:'Baloo 2','Arial Black','Arial Rounded MT Bold',Arial,sans-serif;font-size:1.4rem;color:#F5B800;line-height:1">____%</div></div>
     <div style="background:rgba(255,255,255,.08);border-radius:5px;padding:7px;text-align:center"><div style="font-size:.6rem;color:rgba(255,255,255,.6)">Phần thưởng</div><div style="font-size:1.4rem;line-height:1">🎁</div></div>
   </div>
   <div style="margin-top:8px;padding:7px 10px;background:rgba(255,255,255,.08);border-radius:5px">
